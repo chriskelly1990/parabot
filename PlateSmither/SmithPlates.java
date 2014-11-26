@@ -34,7 +34,8 @@ public class SmithPlates implements Strategy {
         if(Anvils != null && (Game.getOpenInterfaceId() != 41320) && (Players.getMyPlayer().getAnimation() == -1) && (Inventory.getCount(SteelBars) >= 2)) {
             Menu.sendAction(447, SteelBars -1 , Inventory.getItems(SteelBars)[0].getSlot(), 3214, 2783, 1);
             Time.sleep(300);
-            Menu.sendAction(62, Anvils.getHash(), 28, 48, 2783, 1);
+         //   Menu.sendAction(62, Anvils.getHash(), Anvil., 48, 2783, 1);
+            Menu.sendAction(62, Anvils.getHash(), Anvils.getLocalRegionX(), Anvils.getLocalRegionY(),2783, 1 );
             Time.sleep(1000);
         }
 
