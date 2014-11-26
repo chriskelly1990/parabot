@@ -23,6 +23,7 @@ public class InBank implements Strategy {
     Area InBank = new Area(new Tile(3180, 3433), new Tile(3180, 3446), new Tile(3186, 3446), new Tile(3186, 3433));
 
     int SteelBars = 2354;
+    private final int[] BankBooth = {2213, 2214, 2212};
 
 
     public boolean activate() { //if true continue to execute
@@ -37,17 +38,14 @@ public class InBank implements Strategy {
 
 
     public void execute() { //
-
+        SceneObject Booths = SceneObjects.getClosest(BankBooth);
         System.out.println("banking executed");
 
         if (Game.getOpenInterfaceId() != 5292 && (Inventory.getCount(SteelBars) <= 10 )) {
-            SceneObject[] BankBooth = SceneObjects.getNearest(2213);
-            if (BankBooth[0] != null) {
-            System.out.println("Opening bank");
-            BankBooth[0].interact(0);
-
-            Time.sleep(1000);
-        }
+            if(Booths != null) {
+                Menu.sendAction(502, Booths.getHash(), Booths.getLocalRegionX(), Booths.getLocalRegionY(),2213, 7);
+                Time.sleep(1000);
+            }
      }
 
 
