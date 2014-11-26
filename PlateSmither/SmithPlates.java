@@ -20,7 +20,7 @@ public class SmithPlates implements Strategy {
 
     public boolean activate() { //if true continue to execute
 
-        if (Inventory.getCount(SteelBars) >= 5 && (InAnvil.contains(Players.getMyPlayer().getLocation()))) {
+        if (Inventory.getCount(SteelBars) >= 10 && (InAnvil.contains(Players.getMyPlayer().getLocation()))) {
 
             return true;
         }
