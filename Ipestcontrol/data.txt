@@ -1,0 +1,40 @@
+in lander to pc
+south west 2660-2638
+north west 2660-2643
+north east 2663-2643
+south east 2663-2638
+
+finished game gangplank coords - 2657-2639
+gangplank into minigame - 14315
+
+//
+
+in pc
+south west 2626-2566
+north west 2626-2617
+north east 2684-2617
+south east 2684-2566
+
+got point- back interface = 4893
+
+npc's
+3776 - brawler
+3740 - shifter
+3739 - shifter(1)
+
+
+
+traverse to brawlers
+2658-2601
+2666-2593
+2676-2591
+
+in brawlers area
+2671-2585
+2671-2598
+2683-2598
+2683-2585
+
+gain no points as you did not
+
+
